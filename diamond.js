@@ -1,0 +1,33 @@
+number="";
+n=7;
+m=Math.ceil(n/2)
+space="";
+lspace=""
+lnumber=""
+temp=-1
+temp1=11
+for(i=1;i<=m;i++){
+  for(j=m-1;j>=i;j--){
+    space+="11"
+  }
+temp+=4
+  for(k=m;k<=temp-1;k++){
+number+="-"
+  }
+ 
+  space+="*"+number+"*"+"\n"
+  
+  number=""
+}
+for(i=m-1;i>=1;i--){
+  for(j=i;j<=m-1;j++){
+  lspace+="11";
+  }
+  temp1+=-4
+   for(k=temp1;k>=1;k--){
+    lnumber+="-"
+  }
+lspace+="*"+lnumber+"*"+"\n"
+  lnumber=""
+}
+console.log(space+lspace)
