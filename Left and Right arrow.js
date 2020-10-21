@@ -24,4 +24,4 @@ const diamond = function(n){
     }
   }
  }
- diamond(9)
+ diamond(11)
